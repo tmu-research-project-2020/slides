@@ -1,5 +1,5 @@
 ## Reveal.jsを使ったスライド
-https://github.com/tmu-research-project-2020/slides
+https://tmu-research-project-2020.github.io/slides
 
 
 ## 開発
