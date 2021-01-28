@@ -57,7 +57,7 @@ title: "Word Cloud"
 
 ---
 
-# Word Cloud を用いた流行の可視化
+# Word Cloud, TF-IDFを用いた流行の可視化
 
 ---
 
@@ -87,7 +87,7 @@ title: "Word Cloud"
 ## タイトルの前処理
 
 * Lowercase
-* Stop word (wordcloud + training, via, image, language, word)
+* Stop word (既存のものに論文タイトルに頻出する単語を追加 (例: training, via, など))
 
 ---
 
@@ -95,12 +95,10 @@ title: "Word Cloud"
 
 ---
 
-### 2014 年ごろから deep, neural が流行
-
-画像をはる？
+## Word Cloudの傾向
 
 ---
 
-### EMNLP では 2018 年以降から BERT が出現
+## TF-IDFの傾向
 
-画像をはる？
+---
