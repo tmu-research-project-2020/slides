@@ -1,8 +1,4 @@
----
-theme: "white"
-transition: "slide"
-slideNumber: false
-title: "Word Cloud"
+
 ---
 
 ## 『バズってる』の見える化
