@@ -58,6 +58,7 @@ title: "Word Cloud"
 ---
 
 # Word Cloud, TF-IDFを用いた流行の可視化
+### 担当者：伊藤、金、山下
 
 ---
 
