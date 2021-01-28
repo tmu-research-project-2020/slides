@@ -17,6 +17,29 @@
 - Heroku: サービスの公開
 - Firebase: データの保存・読み出し
 - Streamlit: データの可視化
+- Reveal.js: スライドの公開
+
+---
+
+## 公開ページ
+- スライド: https://tmu-research-project-2020.github.io/slides
+
+- ドキュメント: https://tmu-research-project-2020.github.io/documentation/
+
+- サービスページ: https://gs-visualizer-production.herokuapp.com/
+
+---
+
+## 班構成
+- インフラ班: 他サービスとの連携等を設定
+
+（平尾、高橋）
+- 入出力可視化班: データの可視化を行う
+
+（伊藤、金、山下）
+- スクレイピング班: データ収集を行う
+
+（相田、海老根、住吉）
 
 ---
 
