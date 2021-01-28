@@ -1,5 +1,143 @@
 <section>
 
-<h1>test</h1>
+<p>theme: “white”<br>
+transition: “slide”<br>
+slideNumber: false<br>
+title: “Word Cloud”</p>
+
+</section>
+<section>
+
+<h2>『バズってる』の見える化</h2>
+<h3>研究プロジェクト演習</h3>
+<h3>担当：横山昌平准教授</h3>
+
+</section>
+<section>
+
+<h1>スクレイピング班</h1>
+<h3>担当者：相田、海老根、住吉</h3>
+
+</section>
+<section>
+
+<h1>会議検索</h1>
+<h3>担当者：平尾、高橋</h3>
+
+</section>
+<section>
+
+<h2>モチベーション</h2>
+
+<ul>
+  <li>会議を限定して論文の検索を行いたい</li>
+  <li>会議によってページの構造異なるので検索が難しい</li>
+  <li>会議・年代を指定して検索できるようにした</li>
+</ul>
+
+</section>
+<section>
+
+<h2>可視化の流れ</h2>
+
+<ol>
+  <li>会議ごとに 2010-2020 間の論文タイトルを収集</li>
+  <li>収集した論文タイトルと入力したキーワードの類似度のランキング作成</li>
+</ol>
+
+</section>
+<section>
+
+<h2>可視化を行った会議</h2>
+
+<ul>
+  <li>画像：CVPR</li>
+  <li>自然言語処理：ACL, EMNLP, NAACL</li>
+  <li>その他：NeurIPS, VLDB</li>
+</ul>
+
+</section>
+<section>
+
+<h2>類似度の計算</h2>
+
+<ul>
+  <li>pythonの標準ライブラリに入っている文字列の類似度を測定する<a href="https://docs.python.org/ja/3/library/difflib.html"><code>difflib.SequenceMatcher</code></a>を使用</li>
+  <li>中身のアルゴリズムは<a href="https://en.wikipedia.org/wiki/Gestalt_Pattern_Matching">Gestalt Pattern Matching</a>
+</li>
+  <li>ざっくり言うと最長共通部分列 / 全体の長さ</li>
+</ul>
+
+</section>
+<section>
+
+<h2>ACLで「Attention Is All You Need」に対して出る論文</h2>
+<p><img width="600" alt="suggest_sample" src="https://user-images.githubusercontent.com/38539915/106094592-998aa400-6175-11eb-91af-c97bab2a1587.png"></p>
+
+</section>
+<section>
+
+<h1>Word Cloud を用いた流行の可視化</h1>
+
+</section>
+<section>
+
+<h2>モチベーション</h2>
+<ul>
+  <li>バズってるの可視化</li>
+  <li>自分で見るのはめんどくさい</li>
+  <li>年ごとの傾向を一目で見たい！</li>
+  <li>年ごとのバズってるキーワードを可視化</li>
+</ul>
+
+</section>
+<section>
+
+<h2>可視化の流れ</h2>
+
+<ol>
+  <li>会議ごとに 2010-2020 間の論文タイトルを収集</li>
+  <li>収集した論文タイトルを会議、年代ごとに word cloud, tf-idf で可視化</li>
+</ol>
+
+</section>
+<section>
+
+<h2>可視化を行った会議</h2>
+
+<ul>
+  <li>画像：CVPR</li>
+  <li>自然言語処理：ACL, EMNLP, NAACL</li>
+  <li>その他：NeurIPS, VLDB</li>
+</ul>
+
+</section>
+<section>
+
+<h2>タイトルの前処理</h2>
+
+<ul>
+  <li>Lowercase</li>
+  <li>Stop word (wordcloud + training, via, image, language, word)</li>
+</ul>
+
+</section>
+<section>
+
+<h1>傾向</h1>
+
+</section>
+<section>
+
+<h3>2014 年ごろから deep, neural が流行</h3>
+
+<p>画像をはる？</p>
+
+</section>
+<section>
+
+<h3>EMNLP では 2018 年以降から BERT が出現</h3>
+
+<p>画像をはる？</p>
 
 </section>
