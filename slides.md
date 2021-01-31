@@ -7,6 +7,11 @@
 
 ---
 
+# 概要
+国際会議の論文データやGoogle Scholarの論文データを利用し、興味がある論文や最近話題の論文を可視化するシステムの構築を目指した
+
+---
+
 # 環境構築
 ### 担当者：平尾、高橋
 
@@ -22,6 +27,8 @@
 ---
 
 ## 全体像
+![google_scholar_visualizer](https://user-images.githubusercontent.com/38539915/106381385-a0c2e380-63fb-11eb-82e7-1317afd41239.png)
+
 
 ---
 
