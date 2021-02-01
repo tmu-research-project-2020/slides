@@ -192,7 +192,129 @@
 </section>
 <section>
 
-<h1>Legend Buzz論文</h1>
+<h1>レジェンド・バズ論文の可視化</h1>
+
 <h3>担当者：相田、海老根、住吉</h3>
+
+</section>
+<section>
+
+<h2>モチベーション</h2>
+<p><strong>分野の初学者</strong>に向けて、読んでおくべき2種類の論文を提案</p>
+<ul>
+  <li>
+<strong>レジェンド論文</strong>：年代を問わず重要な論文</li>
+  <li>
+<strong>バズ論文</strong>：最近出版され、注目されている論文</li>
+</ul>
+
+</section>
+<section>
+
+<h2>概要</h2>
+
+<p>レジェンド論文、バズ論文は以下のように定義した</p>
+<ul>
+  <li>レジェンド論文：単純なキーワード検索で上位に来る論文</li>
+  <li>バズ論文：キーワード＋出版年の複合検索で上位に来る論文</li>
+</ul>
+
+<p>各分野に関する任意のキーワードに対して、Google Scholar からスクレイピングを行い、論文の情報を集めた</p>
+<ul>
+  <li>タイトル、URL、著者、出版年、出版元、引用数、引用推移</li>
+</ul>
+
+<p>得られた論文情報を可視化した</p>
+
+</section>
+<section>
+
+<h2>1. スクレイピング</h2>
+<p>Google Scholarのウェブサイトをスクレイピングし論文情報を取得、分析する<br>
+スクレイピングの処理は大きく2つに分けられる</p>
+
+<ol>
+  <li>PythonのHTTP通信ライブラリ<strong>requests</strong>を使用してGoogle ScholarのHTMLを取得</li>
+  <li>
+<strong>BeautifulSoup</strong>を使用して必要な情報を抽出し、csvに保存<br>
+<img src="./images/scholar.png" alt="Figure">
+</li>
+</ol>
+
+</section>
+<section>
+
+<h3>1回のスクレイピングで取得できる情報</h3>
+<ul>
+  <li>タイトル</li>
+  <li>URL</li>
+  <li>著者</li>
+  <li>出版年</li>
+  <li>出版元</li>
+  <li>引用数</li>
+  <li>スニペット</li>
+</ul>
+
+</section>
+<section>
+
+<h2>2. ある論文を引用している論文、引用数の推移</h2>
+<p>対象論文発行年〜2021年間の年ごとの対象論文引用数を取得</p>
+<ul>
+  <li>引用論文の発行年を取得することで実現</li>
+</ul>
+
+<p>後にでる、レジェンド論文、可視化論文の被引用推移を可視化するために使用</p>
+
+<p><strong>被引用推移取得までの流れ</strong></p>
+<ol>
+  <li>著者、キーワード、出版名、出版年を入力</li>
+  <li>url をリクエストし、上位10件を表示・対象論文を選択</li>
+  <li>選んだ論文を引用している論文を上位100件検索</li>
+  <li>論文の情報・各年の引用数の推移を抽出し、csv に出力</li>
+</ol>
+
+</section>
+<section>
+
+<h2>3. 複合キーワード検索</h2>
+<p>通常のキーワード検索だと<strong>古い年代の有名な文献</strong>が出てくる  <br>
+<img src="./images/machine-translation-only-keyword.png" alt="Figure"></p>
+
+<p>→検索の際に分野に関係のある<strong>キーワード</strong>だけではなく、  <br>
+<strong>出版（会議）名</strong>・<strong>論文が公開された年</strong>も指定したい</p>
+
+<hr>
+
+<p><strong>複合条件</strong>（キーワード・出版名・出版年）で検索できるように修正した（今後公開予定）</p>
+<ol>
+  <li>キーワード、出版名、出版年を入力</li>
+  <li>url をリクエストし、上位100件を検索</li>
+  <li>論文の情報（タイトル、著者、出版年、引用数、url、スニペット）を抽出</li>
+  <li>csv に出力</li>
+</ol>
+
+</section>
+<section>
+
+<h2>4. 分野のレジェンド論文・バズ論文を可視化</h2>
+
+</section>
+<section>
+
+<p>得られた情報を<strong>Web アプリ上に可視化</strong>した<br>
+<img src="./images/legend-info.png" alt="Figure"><br>
+<img src="./images/legend-citations.png" alt="Figure"></p>
+
+</section>
+<section>
+
+<h2>まとめ</h2>
+<p>国際会議の論文データやGoogle Scholarの論文データを利用し、興味がある論文や最近話題の論文を可視化するシステムの構築した</p>
+<ul>
+  <li>会議ごとのキーワードに対する関連度を可視化</li>
+  <li>会議，年ごとの流行をword cloudで可視化</li>
+  <li>初学者が読んでおくべき2種類の論文を可視化</li>
+</ul>
 
 </section>
