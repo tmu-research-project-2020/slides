@@ -175,7 +175,8 @@ Google Scholarの検索結果をスクレイピング
 1. PythonのHTTP通信ライブラリ**requests**を使用
 Google ScholarのHTMLを取得
 1. **BeautifulSoup**を使用して必要な情報を抽出
-<img width="400" alt="scholar" src="https://user-images.githubusercontent.com/49933783/106438184-818a8b80-64b9-11eb-90c2-3e804c38d3d0.png">
+
+<img width="600" alt="scholar" src="https://user-images.githubusercontent.com/49933783/106438184-818a8b80-64b9-11eb-90c2-3e804c38d3d0.png">
 
 ---
 
@@ -194,14 +195,14 @@ Google ScholarのHTMLを取得
 発行年〜2021年間の年ごとの引用数を取得
 - 引用元の発行年を取得することで実現
 
-レジェンド・バズ論文の被引用推移の可視化に使用
+それぞれの被引用推移の可視化に使用
 ![citation](https://user-images.githubusercontent.com/49933783/106441316-3ecab280-64bd-11eb-9bb4-83c8b03d5a8d.png)
 
 ---
 
 ## 3. 複合キーワード検索
-通常のキーワード検索だと**古くて有名な文献**が出る  
-<img width="400" alt="machine-translation-only-keyword" src="https://user-images.githubusercontent.com/49933783/106438244-98c97900-64b9-11eb-8200-4e63b3d46861.png">
+通常のキーワード検索だと**古く有名な文献**が出る  
+<img width="600" alt="machine-translation-only-keyword" src="https://user-images.githubusercontent.com/49933783/106438244-98c97900-64b9-11eb-8200-4e63b3d46861.png">
 →検索の際**キーワード**だけではなく、  
 **出版（会議）名**・**出版年**も指定したい  
 
@@ -209,7 +210,7 @@ Google ScholarのHTMLを取得
 
 ## 3. 複合キーワード検索
 
-**複合条件**で検索できるように修正（今後公開予定）
+**複合条件**で検索できるように修正（公開予定）
 1. キーワード、出版名、出版年を入力
 1. url をリクエストし、上位100件を検索
 1. 論文の情報を抽出
@@ -217,9 +218,7 @@ Google ScholarのHTMLを取得
 
 ---
 
-## 4. 分野のレジェンド論文・バズ論文を可視化
-
----
+## 4. レジェンド•バズ論文を可視化
 
 得られた情報を**Web アプリ上に可視化**
 
