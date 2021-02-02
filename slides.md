@@ -136,9 +136,15 @@
 
 ## Word Cloudの傾向
 
+* 単純に高頻度の単語が大きく表示される設定
+* 各会議例えば neural や deep が最近の会議では大きくなっている
+
 ---
 
 ## TF-IDFの傾向
+
+* 重要な単語が上位に来る
+* 例えば NLP 系の会議なら, 昔は statistical が上位にいるが今は neural や bert, transformer, attention などが上位
 
 ---
 
